@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+.detail_content{
+	margin-top: 50px;
+	position: relative;
+
+	
+}
+.img_detail img{
+	
+	max-width: 50%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.description_content {
+	padding-left: 30px;
+	padding-right: 30px;
+	margin:10px;
+}
+#alias_name{
+	padding-left: 30px;
+	line-height: 130%;
+	padding-bottom: 20px;
+}
+
+#alias{
+	font-weight: bolder;
+	font-family: monospace;
+	font-size: 3em;
+
+}
+#name{
+	font-size: 1.5em;
+}
+
+
+.description { 
+  width: 100%; 
+  height: auto; 
+  background: red; 
+  position: relative; 
+  padding: 25px;
+  color: white;
+
+} 
+.description:before { 
+  content: ""; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  border-bottom: 44px solid red; 
+  border-left: 44px solid #fff;/*Para el ejemplo he elegido blanco, poned vosotros el color de fondo de vuestra web. No uséis transparent porque entonces se verá el color de fondo del cuadrado*/ 
+} 
+ 
+.description:after { 
+  content: ""; 
+  position: absolute; 
+  bottom: 0; 
+  right: 0; 
+  border-bottom: 44px solid #fff; 
+  border-left: 44px solid  red;/*Para el ejemplo he elegido blanco, poned vosotros el color de fondo de vuestra web. No uséis transparent porque entonces se verá el color de fondo del cuadrado*/
+} 

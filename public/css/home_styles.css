@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+
+
+
+.carousel_text_bg{
+	background: rgb(0,0,0);
+	background: linear-gradient(90deg, rgba(0,0,0,0) 25%, rgba(0,0,0,0.5) 38%, rgba(0,0,0,0.5) 63%, rgba(0,0,0,0) 75%);
+	padding-top: 9px;
+	padding-bottom: 1px;
+}
+
+
+.container{
+  
+	margin-top:60px;
+	margin-bottom: 10px;
+  z-index: 30;
+}
+
+.lst_description_cont{
+  width: 50%;
+  margin: 0 auto;
+  margin:10px;
+}
+
+
+.img_box_cont{
+  align-content: center;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.img_box_cont img{
+  width: 100%;
+  height: auto;
+   transition: transform 500ms ease-in-out;
+  transform-origin: left top;
+}
+
+
+.link_container:hover img {
+  transform: scale(1.05);
+}
+
+
+.text_box{
+  position: relative;
+  margin-left:10px;
+  
+}
+
+.animation_text_box{
+  position: absolute;
+  width: 5px;
+  height: 70px;
+  background-color: black;
+}
+.link_container:hover .animation_text_box{
+  -webkit-transition: width 0.3s ease-in-out;
+  width: 120px;
+  }
+
+
+
+
+.name{
+  font-size: 1.1em;
+  font-weight: bolder;
+}
+
+.desc_box_content { 
+  overflow: hidden;
+  width: 145px; 
+  height: 220px; 
+  background: red; 
+  position: relative; 
+  padding: 25px;
+  color: white;
+} 
+
+.desc_box_content:before { 
+  content: ""; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  border-bottom: 20px solid red; 
+  border-left: 20px solid #fff;/*Para el ejemplo he elegido blanco, poned vosotros el color de fondo de vuestra web. No uséis transparent porque entonces se verá el color de fondo del cuadrado*/ 
+} 
+ 
+.desc_box_content:after { 
+  content: ""; 
+  position: absolute; 
+  bottom: 0; 
+  right: 0; 
+  border-bottom: 20px solid #fff; 
+  border-left: 20px solid  red;/*Para el ejemplo he elegido blanco, poned vosotros el color de fondo de vuestra web. No uséis transparent porque entonces se verá el color de fondo del cuadrado*/
+} 
