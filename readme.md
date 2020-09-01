@@ -1,3 +1,38 @@
+*#Versions and dependecies*
+
+"name": "laravel/laravel",
+
+
+    "description": "The Laravel Framework.",
+    
+    "keywords": ["framework", "laravel"],
+    
+    "license": "MIT",
+    
+    "type": "project",
+    
+    "require": {
+    
+        "php": ">=5.6.4",
+        
+        "guzzlehttp/guzzle": "^7.0",
+        
+        "laravel/framework": "5.5.*",
+        
+        "laravel/tinker": "~1.0"
+        
+    },
+    
+    "require-dev": {
+    
+        "fzaninotto/faker": "~1.4",
+        
+        "mockery/mockery": "0.9.*",
+        
+        "phpunit/phpunit": "~6.0"
+        
+    },
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
