@@ -16,13 +16,18 @@
             <div class="row justify-content-center">
                 <div class="col-sm-6 search_col align-self-center">
                     <div class="search_bar">
-                        <input class="input_search" type="text" placeholder="Enter search text...">
-                        <a class="search_link" href="">
-                            <div class="icon_circle">
-                                <i class="fas fa-search" onclick="">
-                                </i>
-                            </div>
-                        </a>
+                       
+                        <form id="search_form" name="search_form" action="{{route ('search.by_name')}}"  method="GET">
+                          
+                            <input class="input_search" type="text" name="input_search" placeholder="Enter search text..."  name="name_search">
+                            <a class="search_link" href="javascript:{}" onclick="document.getElementById('search_form').submit(); return false;" >
+                                <div class="icon_circle">
+                                    <i class="fas fa-search" onclick=""></i>
+                                </div>
+                            </a>
+                        </form>
+
+
                     </div>
                 </div>
             </div>
@@ -34,18 +39,25 @@
 <div class="row align-items-center detail_content" >
 
     <div class="col-md-6 col-sm-12 mx-auto text-center img_detail">
-        <img src="{{ url('img/thor.png') }}" >
+        <img src="{{ url($descriptions['image']) }}" >
     </div>
 
     <div class="col-md-6 col-sm-12 mx-auto">
         <div id="alias_name">
-            <span id="alias">THOR</span><br>
-            <span id="name">Thor Odison</span>
+            <span id="alias">{{$descriptions['name']}}</span><br>
+            <span id="name">{{$descriptions['publish']}}</span>
         </div>
 
         <div class="description_content">
             <div class="description">
-                lo asado pasado es lo que tu quieras desde siempre asi que no me estes molestndo pcoidcsdfsdfg s rtsdf dergfdty d htfrg fguh yfg hyth gf  hyufg yft hgyu hyftgj ft hy drh gdfh fg ghghh ft jftjgfghgjhh tyhew fgdj iytjhul kdydfj ki ftg ldfghy
+               <span class="title">GENDER: </span><span class="title_text">{{$descriptions['gender']}}</span><br>
+               <span class="title">INTELLIGENCE: </span><span class="title_text">{{$descriptions['intelligence']}}</span><br>
+               <span class="title">STRENGTH: </span><span class="title_text">{{$descriptions['strength']}}</span><br>
+               <span class="title">POWER: </span><span class="title_text">{{$descriptions['power']}}</span><br>
+               <span class="title">RACE: </span><span class="title_text">{{$descriptions['race']}}</span><br>
+               <span class="title">WORK: </span><span class="title_text">{{$descriptions['work']}}</span><br>
+               <span class="title">COMBAT: </span><span class="title_text">{{$descriptions['combat']}}</span><br>
+               <span class="title">RACE:</span><span class="title_text">{{$descriptions['publish']}}</span><br>
            </div>
        </div>
     </div>

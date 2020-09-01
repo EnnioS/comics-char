@@ -7,8 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <!-- CSRF Token -->
-<meta name="csrf-token" content="{{ csrf_token() }}">
+
 <title>@yield('title','Comics Characters - Search')</title>
 <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="{{ url('css/bootstrap.css') }}">

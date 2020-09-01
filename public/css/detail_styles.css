@@ -20,13 +20,12 @@
 }
 #alias_name{
 	padding-left: 30px;
-	line-height: 130%;
+	line-height: 190%;
 	padding-bottom: 20px;
 }
 
 #alias{
 	font-weight: bolder;
-	font-family: monospace;
 	font-size: 3em;
 
 }
@@ -40,7 +39,7 @@
   height: auto; 
   background: red; 
   position: relative; 
-  padding: 25px;
+  padding: 40px;
   color: white;
 
 } 
@@ -61,3 +60,9 @@
   border-bottom: 44px solid #fff; 
   border-left: 44px solid  red;/*Para el ejemplo he elegido blanco, poned vosotros el color de fondo de vuestra web. No uséis transparent porque entonces se verá el color de fondo del cuadrado*/
 } 
+
+.title{
+  font-size: 1.1em;
+  font-weight: bolder;
+
+}
