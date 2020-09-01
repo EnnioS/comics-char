@@ -18,13 +18,14 @@
                     <div class="search_bar">
                        
                         <form id="search_form" name="search_form" action="{{route ('search.by_name')}}"  method="GET">
-                          
+                          {{ csrf_field() }}
                             <input class="input_search" type="text" name="input_search" placeholder="Enter search text..."  name="name_search">
-                            <a class="search_link" href="javascript:{}" onclick="document.getElementById('search_form').submit(); return false;" >
-                                <div class="icon_circle">
-                                    <i class="fas fa-search" onclick=""></i>
-                                </div>
-                            </a>
+                             <button type="submit" class="btn_search">
+                                    
+                                        <i class="fas fa-search" onclick=""></i>
+                                    
+                                </button>
+                          
                         </form>
 
 

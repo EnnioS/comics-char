@@ -5,6 +5,7 @@
 <link rel="shortcut icon" href="{{ url('img/sc_icon.png') }}" />
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -38,8 +39,6 @@
         <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
         <script src="{{ url('js/jquery-2.1.1.min.js') }}"></script>
         <script src="{{ url('js/bootstrap.js') }}"></script>
-        <script src="{{ url('js/jquery.dataTables.js') }}"></script>
-        <script src="{{ url('js/main_script.js') }}"></script>
 
         
     </body>

@@ -57,28 +57,25 @@ footer {
 	-webkit-box-reflect: below 0px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
 
 	}
-.search_link{
-	width: 1px;
-	height: 1px;
-	text-decoration:none;
-	position: absolute;
-	
 
+.btn_search:focu{
+       outline: none;
 }
 
-.icon_circle:hover{
-		background-color: blue;
-	}
-
-.icon_circle{
+.btn_search{
+	outline: none;
+	position: relative;
 	color: white;
 	border-radius: 60px;
+	border-color: none;
 	background-color: red;
-	padding-left: 7px; 
-	padding-top: 2px; 
 	width: 29px;
 	height: 30px;
 }
+
+.btn_search:hover{
+		background-color: blue;
+	}
 
 .input_search{
 	z-index: 0;
