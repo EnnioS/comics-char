@@ -1,4 +1,4 @@
-*#Versions and dependecies*
+*## Versions and dependecies*
 
 "name": "laravel/laravel",
 
